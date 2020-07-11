@@ -38,7 +38,7 @@ var largestNumber = function (num1, num2, num3) {
     }
   }
 
-  console.log('M')
+  console.log('My greatest number is ' + greatestNumber)
 }
 
 // console.log(largestNumber(6, 3, 9))
