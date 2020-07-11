@@ -10,21 +10,38 @@ function sum(n1, n2) {
 
 // Write a function that accepts three numbers as parameters, and returns the largest of those numbers.
 
-function getLargest(n1, n2, n3) {
-  let largest = 0
+// function getLargest(n1, n2, n3) {
+//   let largest = 0
 
-  if (n1 >= n2) {
-    largest = n1
-  } else {
-    largest = n2
+//   if (n1 >= n2) {
+//     largest = n1
+//   } else {
+//     largest = n2
+//   }
+
+//   if (n3 >= largest) {
+//     largest = n3
+//   }
+
+//   return largest
+// }
+
+// ALTERNATIVE SOLUTION
+
+var largestNumber = function (num1, num2, num3) {
+  var greatestNumber = 0
+  var numbersArray = [num1, num2, num3]
+
+  for (var i = 0; i < numbersArray.length; i++) {
+    if (numbersArray[i] > greatestNumber) {
+      greatestNumber = numbersArray[i] //9
+    }
   }
 
-  if (n3 >= largest) {
-    largest = n3
-  }
-
-  return largest
+  console.log('M')
 }
+
+// console.log(largestNumber(6, 3, 9))
 
 // console.log(getLargest(10, 20, 31))
 
