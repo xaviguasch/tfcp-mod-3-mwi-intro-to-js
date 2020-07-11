@@ -4,6 +4,34 @@
 
 // Write a function that accepts two numbers as parameters, and returns the sum.
 
+function sum(n1, n2) {
+  return n1 + n2
+}
+
 // Write a function that accepts three numbers as parameters, and returns the largest of those numbers.
 
+function getLargest(n1, n2, n3) {
+  let largest = 0
+
+  if (n1 >= n2) {
+    largest = n1
+  } else {
+    largest = n2
+  }
+
+  if (n3 >= largest) {
+    largest = n3
+  }
+
+  return largest
+}
+
+// console.log(getLargest(10, 20, 31))
+
 // Write a function that accepts one number as a parameter, and returns whether that number is even or odd. (Return the string "even" or "odd");
+
+function oddOrEven(num) {
+  return num % 2 === 0 ? 'even' : 'odd'
+}
+
+// console.log(oddOrEven(11))
