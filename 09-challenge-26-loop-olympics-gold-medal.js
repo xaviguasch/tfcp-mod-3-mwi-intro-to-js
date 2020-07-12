@@ -54,7 +54,7 @@ const arr = [
   [0, 1, 2],
   [0, 1, 2],
 ]
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < arr.length; i++) {
   for (let j = 0; j < 3; j++) {
     arr[i][j] = 'x'
   }
