@@ -49,11 +49,14 @@
 // ["x", ...],
 // ["x",...], ...]
 
-const arr = []
+const arr = [
+  [0, 1, 2],
+  [0, 1, 2],
+  [0, 1, 2],
+]
 for (let i = 0; i < 3; i++) {
-  arr.push([])
   for (let j = 0; j < 3; j++) {
-    arr[i].push('x')
+    arr[i][j] = 'x'
   }
 }
 
